@@ -12,6 +12,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  color: #e2b714;
+  background-color: #2e2e31;
 }
 
 a {
@@ -21,6 +23,7 @@ a {
 }
 a:hover {
   color: #e2b714;
+  color: #ffffff;
 }
 
 body {
@@ -43,9 +46,9 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  background-color: #ffffff;
 }
 button:hover {
   border-color: #e2b714;
@@ -53,17 +56,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #e2b714;
-    background-color: #2e2e31;
-  }
-  a:hover {
-    color: #ffffff;
-  }
-  button {
-    background-color: #ffffff;
-  }
 }
