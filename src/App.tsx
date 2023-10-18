@@ -1,21 +1,20 @@
-import { useState } from "react";
+import { Outlet } from "react-router-dom";
 import "./App.css";
 import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div></div>
       <h1>Wiki-Games ~ Under Construction</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>yes</p>
+        <a href="https://localhost:3000/api/fetch"> </a>
+        <p>if nothing appears, something is wrong</p>
+        <p>↓ outlet is here ↓</p>
+        <br></br>
+        <br></br>
+        <Outlet/>
       </div>
-      <p className="read-the-docs">testtext</p>
       <body>
         <Analytics />
       </body>
