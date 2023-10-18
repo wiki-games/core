@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 
-export async function loader({ params }): Promise<string> {
+export async function loader({ params }:any): Promise<string> {
   console.log(params);
   const response = await fetch("/api/fetch", {
     method: "POST",
