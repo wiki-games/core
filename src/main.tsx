@@ -78,8 +78,8 @@ const router = createBrowserRouter([
             action: destroyAction,
             errorElement: (
               <div>
-                oh no! you screwed up so badly that something went "no" and
-                threw an error! thats such a vincent the booger thing to do
+                not very schwifty
+                :(
               </div>
             ),
           },

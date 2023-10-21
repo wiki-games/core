@@ -9,7 +9,7 @@ export default function App() {
       <h1>Wiki-Games ~ Under Construction</h1>
       <div className="card">
         <a href="https://localhost:3000/api/fetch"> </a>
-        <p>if nothing appears, something is wrong</p>
+        <p>if nothing appears, go to wiki-games.com/gameName/Stray.</p>
         <p>↓ outlet is here ↓</p>
         <br></br>
         <br></br>
