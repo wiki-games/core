@@ -10,25 +10,6 @@ export default function ContentPage() {
         <p>↓ outlet is here ↓</p>
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <Outlet />
       </div>
     </div>
