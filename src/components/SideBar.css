@@ -8,3 +8,31 @@
   padding: 40px 10px 10px 20px;
   box-shadow: 2px 0px 3px #00000066;
 }
+
+.ModeSelector {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.ModeSelector button {
+  background-color: #252525; /* Primary color: rgb(37,37,37) */
+  color: #ffffff;
+  border: none;
+  padding: 20px 12px; /* Adjusted padding */
+  margin-right: 5px; /* Adjusted margin to make buttons closer */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.ModeSelector button:hover {
+  background-color: #e2b714; /* Secondary color: #e2b714 */
+  color: #252525; /* Change text color on hover */
+}
+
+.ModeSelector button.active {
+  background-color: #252525;
+  color: #e2b714; /* Secondary color for active button */
+  box-shadow: 0px 1px 5px
+}
+
