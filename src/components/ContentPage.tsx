@@ -10,7 +10,9 @@ export default function ContentPage() {
         <p>↓ outlet is here ↓</p>
         <br />
         <br />
+        <div className="text">
         <Outlet />
+        </div>
       </div>
     </div>
   );
