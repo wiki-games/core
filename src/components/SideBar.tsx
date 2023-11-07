@@ -63,7 +63,7 @@ export default function SideBar() {
           className={currentMode === SidebarMode.MODE_3 ? "active" : ""}
           onClick={() => handleModeChange(SidebarMode.MODE_3)}
         >
-          NAME
+          edit
         </button>
       </div>
       {/* Render the content for each mode based on the currentMode */}
@@ -74,7 +74,7 @@ export default function SideBar() {
         <a href="/gameName/Ginger Cat (Stray)">link to cat page</a>
       )}
       {currentMode === SidebarMode.MODE_3 && (
-        <a href="/gameName/Cat (Stray)">link to redirect cat page</a>
+        <a href="/new">CREATE NEW PAGE!!! (new feature)</a>
       )}
     </div>
   );

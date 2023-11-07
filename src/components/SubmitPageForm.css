@@ -1,0 +1,46 @@
+.titlefield {
+    margin: 15px;
+    background-color: #e2b71420;
+    border-radius: 4px;
+    border: 2px;
+    font-size: 1.5rem;
+    padding: 7px 12px;
+    display: block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+
+.contentfield {
+    margin: 15px;
+    background-color: #e2b71420;
+    border-radius: 4px;
+    border: 2px;
+    font-size: 1.5rem;
+    padding: 7px 12px;
+    height: 300px;
+    display: block;
+    width: 280px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.authorfield {
+    margin: 15px;
+    display: block;
+    background-color: #e2b71420;
+    border-radius: 4px;
+    border: 2px;
+    font-size: 1.5rem;
+    padding: 7px 12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.booton {
+    padding: 10px 10px;
+    margin: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.booton button:hover {
+    background-color: #e2b714;
+    color: #ffffff
+}

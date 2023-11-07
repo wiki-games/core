@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
+import { parseWikitext } from "wikimark";
 
 export async function loader({ params }:any): Promise<string> {
-  console.log(params);
   const response = await fetch("/api/fetch", {
     method: "POST",
     body: JSON.stringify({
@@ -9,7 +9,10 @@ export async function loader({ params }:any): Promise<string> {
       gameName: params.gameName,
     }),
   });
-  return await response.text();
+  const data = await response.json();
+  const parsed = parseWikitext(data.content);
+  console.log(parsed);
+  return data.content;
 }
 
 export default function Page() {
