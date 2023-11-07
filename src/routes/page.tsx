@@ -1,5 +1,4 @@
 import { useLoaderData } from "react-router-dom";
-import { parseWikitext } from "wikimark";
 
 export async function loader({ params }:any): Promise<string> {
   const response = await fetch("/api/fetch", {
@@ -10,8 +9,6 @@ export async function loader({ params }:any): Promise<string> {
     }),
   });
   const data = await response.json();
-  const parsed = parseWikitext(data.content);
-  console.log(parsed);
   return data.content;
 }
 
