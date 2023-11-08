@@ -1,0 +1,13 @@
+ == PostgreSQL Database Info == 
+
+
+ pages_${gameName} INFORMATION_SCHEMA:
+
+CREATE TABLE pages_$$EXAMPLEGAME$$ (
+  	id UUID PRIMARY KEY DEFAULT uuid_generate_v4() NOT NULL,
+  	name VARCHAR(255) NOT NULL,
+  	update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+  	content TEXT NOT NULL,
+  	content_type VARCHAR(255) NOT NULL
+);
+

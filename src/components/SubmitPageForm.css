@@ -44,3 +44,25 @@
     background-color: #e2b714;
     color: #ffffff
 }
+
+.namefield {
+    margin: 15px;
+    display: block;
+    background-color: #e2b71420;
+    border-radius: 4px;
+    border: 2px;
+    font-size: 1.5rem;
+    padding: 7px 12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.typefield {
+    margin: 15px;
+    display: block;
+    background-color: #e2b71420;
+    border-radius: 4px;
+    border: 2px;
+    font-size: 1.5rem;
+    padding: 7px 12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}

@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./SubmitPageForm.css"
 
 const SubmitPageForm: React.FC = () => {
-  const [title, setTitle] = useState("");
+  const [name, setName] = useState("");
   const [content, setContent] = useState("");
-  const [author, setAuthor] = useState("");
+  const [game, setGame] = useState("");
+  const [type, setType] = useState("");
 
   const form = document.querySelector("form");
 
@@ -43,14 +44,16 @@ const SubmitPageForm: React.FC = () => {
   };
 
   return (
+    <>
+    <p>by the way, itll only accept if you put "Stray" in the Game Name? field.</p>
     <form onSubmit={handleSubmit}>
       <input
         className="titlefield"
         type="text"
-        name="title"
-        placeholder="Title"
-        value={title}
-        onChange={(event) => setTitle(event.target.value)}
+        name="name"
+        placeholder="Page Name"
+        value={name}
+        onChange={(event) => setName(event.target.value)}
       />
       
       <textarea
@@ -60,18 +63,19 @@ const SubmitPageForm: React.FC = () => {
         value={content}
         onChange={(event) => setContent(event.target.value)}
       />
-      
+
       <input
-        className="authorfield"
+        className="namefield"
         type="text"
-        name="author"
-        placeholder="Author"
-        value={author}
-        onChange={(event) => setAuthor(event.target.value)}
+        name="game"
+        placeholder="Game Name?"
+        value={game}
+        onChange={(event) => setGame(event.target.value)}
       />
       
       <button type="submit" className="booton">Submit</button>
     </form>
+    </>
   );
 };
 
