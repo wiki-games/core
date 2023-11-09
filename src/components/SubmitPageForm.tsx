@@ -5,7 +5,6 @@ const SubmitPageForm: React.FC = () => {
   const [name, setName] = useState("");
   const [content, setContent] = useState("");
   const [game, setGame] = useState("");
-  const [type, setType] = useState("");
 
   const form = document.querySelector("form");
 

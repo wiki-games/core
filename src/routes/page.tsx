@@ -1,7 +1,8 @@
 import { useLoaderData } from "react-router-dom";
-import { parseWikitext } from "wikimark";
+import { DocumentNode, parseWikitext } from "wikimark";
+import WikiContent from "../components/wikiContent.tsx";
 
-export async function loader({ params }: any): Promise<string> {
+export async function loader({ params }: any): Promise<DocumentNode> {
   const response = await fetch("/api/fetch", {
     method: "POST",
     body: JSON.stringify({
@@ -10,21 +11,11 @@ export async function loader({ params }: any): Promise<string> {
     }),
   });
   const data = await response.json();
-  try {
-    const parsed = parseWikitext(data.content);
-    console.log(parsed);
-    console.log(parsed.toDebugTree());
-  } catch (error) {
-    console.log(error);
-  }
-  return data.content;
+  const parsed = parseWikitext(data.content, params.pageName);
+  return parsed;
 }
 
 export default function Page() {
-  const data = useLoaderData();
-  return (
-    <>
-      <>{data}</>
-    </>
-  );
+  const data = useLoaderData() as DocumentNode;
+  return <WikiContent doc={data} />;
 }
