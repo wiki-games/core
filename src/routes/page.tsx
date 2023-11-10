@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import { DocumentNode, parseWikitext } from "wikimark";
-import WikiContent from "../components/wikiContent.tsx";
+import WikiContent from "../components/WikiContent.tsx";
 
 export async function loader({ params }: any): Promise<DocumentNode> {
   const response = await fetch("/api/fetch", {
