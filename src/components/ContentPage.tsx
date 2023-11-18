@@ -3,9 +3,9 @@ import "./ContentPage.css";
 
 export default function ContentPage() {
   return (
-    <div className="content">
+    <div className="contentOuter"> 
       <h1>Wiki-Games ~ Under Construction</h1>
-      <div className="card">
+      <div className="contentInner">
         <p>if nothing appears, go to wiki-games.com/Stray/Main.</p>
         <p>by the way, NEW FEATURE! Go to the edit field in the sidebar to make your own page!</p>
         <p>↓ outlet is here ↓</p>
@@ -13,6 +13,7 @@ export default function ContentPage() {
         <Outlet />
         </div>
       </div>
+      <div className="footer"></div>
     </div>
   );
 }

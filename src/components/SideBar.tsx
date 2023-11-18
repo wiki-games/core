@@ -68,7 +68,7 @@ export default function SideBar() {
       </div>
       {/* Render the content for each mode based on the currentMode */}
       {currentMode === SidebarMode.MODE_1 && (
-        <a href="/gameName/Stray">link to stray page</a>
+        <a href="/Stray/Main">link to stray page</a>
       )}
       {currentMode === SidebarMode.MODE_2 && (
         <a href="/gameName/Ginger Cat (Stray)">link to cat page</a>
