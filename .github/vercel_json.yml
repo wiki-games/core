@@ -1,0 +1,25 @@
+name: Check vercel.json file size
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-vercel-json-size:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check vercel.json file size
+        run: |
+          if [ -f "vercel.json" ]; then
+            vercel_json_size=$(wc -c "vercel.json")
+            if [ "$vercel_json_size" -lt 10 ]; then
+              echo "vercel.json file is too small (size: $vercel_json_size bytes)"
+              exit 1
+            fi
+          fi
